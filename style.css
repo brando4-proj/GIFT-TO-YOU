@@ -1,0 +1,235 @@
+html{
+  background: #f1aab2;
+  background-repeat: no-repeat;
+      
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+    margin: 200px 0px 280px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffa1b2;
+    padding: 20px;
+    height: 200px;
+}
+.card p{
+    padding: 20px;
+    leter-spacing: 100px;
+    
+}
+
+
+h1{
+  padding: 20px;
+  font-size: 70px;
+  animation-name: animate2;
+  animation-duration: 1s;
+  z-index: -1;
+  font-family: serif;
+  color: white;
+  transition: ease;
+  position: relative;
+}
+
+span{
+    font-size: 40px;
+    padding: 15px;
+    animation-name: animate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    color: #fff;
+    transition: ease-out;
+    font-family: serif;
+    border-radius: 20px;
+    -webkit-transform: scale(0.1);
+    transition: 1s ease-in;
+    margin: 1px;
+}
+
+span:nth-child(1){
+   animation-delay: 0.5s;
+   background: red;
+}
+
+span:nth-child(2){
+   animation-delay: 0.6s;
+   background: blue;
+}
+span:nth-child(3){
+   animation-delay: 0.7s;
+   background: orange;
+}
+span:nth-child(4){
+   animation-delay: 0.8s;
+   background: black;
+}
+span:nth-child(5){
+   animation-delay: 0.9s;
+   background: white;
+   color: black;
+}
+span:nth-child(6){
+   animation-delay: 1s;
+   background: violet;
+}
+span:nth-child(7){
+   animation-delay: 1.1s;
+   background: purple;
+}
+span:nth-child(8){
+   animation-delay: 1.2s;
+   background: seagreen;
+}
+span:nth-child(9){
+   animation-delay: 1.3s;
+   background: pink;
+}
+span:nth-child(10){
+   animation-delay: 1.4s;
+   background: navy;
+}
+span:nth-child(11){
+   animation-delay: 1.5s;
+   background: coral;
+}
+span:nth-child(12){
+   animation-delay: 1.6s;
+   background: tomato;
+}
+span:nth-child(13){
+   animation-delay: 1.7s;
+   background: lime;
+}
+
+
+@keyframes animate{
+    0%{
+        -webkit-transform: translateY(100px);
+        
+    }
+    100%{
+        opacity: 0.9;
+        -webkit-transform: scale(1.5);
+        border: 1px solid black;
+    }
+}
+
+@keyframes animate2 {
+    0%{
+        color: black;
+        top: -100px;
+    }
+    100%{
+        top: 0px;
+        
+    }
+}
+
+.lyric-container{
+    padding: 200px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    height: 250px;
+    border-radius: 40px;
+    margin: 0px 20px 0px 20px;
+}
+
+.lyric-container::before{
+    content: '';
+    z-index: 0.5;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: block;
+    opacity: 0.5;
+    border-radius: 40px;
+}
+
+.lyric-container h2{
+    padding: 10px;
+    background: linear-gradient(to top, red, white);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.lyric-container p{
+    padding: 20px; 
+    font-size: 50px;
+    font-family: cursive, serif;
+}
+
+.box{
+    padding: 200px;
+    margin: 200px 20px 0px 20px;
+    border-bottom: 10px solid #f1e7c2;
+    border-top: 10px solid #f1e7c2;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-out;
+}
+
+.box p{
+    font-size: 50px;
+    background: linear-gradient(to right, #f5baa2, #fad1d2);
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.box button{
+    padding: 20px;
+    margin: 50px 0px 0px 0px;
+    width: 240px;
+    border: none;
+    border-radius: 20px;
+    font-size: 40px;
+    background: #111;
+    color: #fff;
+    font-weight: 100;
+    font-family: serif;
+    position: relative;
+    transition: 1s ease-out;
+}
+
+.box button:hover{
+    border: 5px solid #faf122;
+    background: tomato;
+}
+
+.box button::after{
+    content: '';
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block; 
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(350deg);
+}
+
+
+
+.box hr{
+    padding: 5px;
+    width: 150px;
+}
